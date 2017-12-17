@@ -42,6 +42,6 @@ app.use(function (req,res,next) {
 
 mongoose.connect(`mongodb://${config.http.host}/portfolio`, {useMongoClient: true});
 mongoose.Promise = global.Promise;
-app.listen(config.http.port,function(){
+app.listen(process.env.PORT || 3000,function(){
   console.log(`Server is run at ${config.http.host}:${config.http.port}`);
 });
