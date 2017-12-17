@@ -4,7 +4,126 @@
     <bookmark url="file://$PROJECT_DIR$/views/admin.pug" description="    .saved-window&#10;      .saved-window__title Сообщ..." line="54" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1289e62c-71ac-4527-9201-39819a852a34" name="Default" comment="" />
+    <list default="true" id="1289e62c-71ac-4527-9201-39819a852a34" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/android-icon-36x36.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/android-icon-48x48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/android-icon-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/android-icon-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-114x114.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-120x120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-152x152.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-180x180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-57x57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-60x60.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-76x76.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon-precomposed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/apple-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/favicon-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/favicon-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/ms-icon-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/ms-icon-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/ms-icon-310x310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/favicon/ms-icon-70x70.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/filters/blur.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/BernierRegular/BernierRegular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/BernierRegular/BernierRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/BernierRegular/BernierRegular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBold/RobotoBold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBold/RobotoBold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBold/RobotoBold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBoldItalic/RobotoBoldItalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBoldItalic/RobotoBoldItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoBoldItalic/RobotoBoldItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoItalic/RobotoItalic.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoItalic/RobotoItalic.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoItalic/RobotoItalic.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoLight/RobotoLight.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoLight/RobotoLight.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoLight/RobotoLight.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoMedium/RobotoMedium.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoMedium/RobotoMedium.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoMedium/RobotoMedium.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoRegular/RobotoRegular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoRegular/RobotoRegular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/fonts/RobotoRegular/RobotoRegular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/about_bg_left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/about_bg_right.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/about_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/arrow_down.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/blog_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/check.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/envelope.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/envelope2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/envelope_n.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/github.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/github_round.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/hamburger.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/in.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/in_round.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/link.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/login.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/map-marker.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/map_n.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/password.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/phone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/phone2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/phone_n.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/picture.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/portf_arrow_down.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/portf_arrow_up.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/portfolio_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/preloader_round.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/quote-left.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/skype.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/skype_n.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/stars1.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/stars2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/stars3.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/telegram_logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/vk.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/vk_round.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/icons/works_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/admin-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/blog-img-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/blog_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/blur-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/comm-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/comm-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/info-img.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/parallax-welcome/layer-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/portfolio_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/preloader/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/welcome-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works/work-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works/work-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works/work-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works/work-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/img/works_header.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/assets/sprite/sprite.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/static/js/vendor.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/static/css/main.css" afterPath="$PROJECT_DIR$/public/static/css/main.css" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -58,7 +177,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="93">
@@ -68,11 +187,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="93">
+              <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -367,16 +486,15 @@
       <workItem from="1513269572594" duration="12301000" />
       <workItem from="1513343497900" duration="9470000" />
       <workItem from="1513369806147" duration="36000" />
-      <workItem from="1513519937333" duration="10087000" />
+      <workItem from="1513519937333" duration="10344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200591000" />
+    <option name="totallyTimeSpent" value="200848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24670571" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -386,7 +504,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5416667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5416667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -774,18 +892,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="45" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
           <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
           <folding />
         </state>
       </provider>
