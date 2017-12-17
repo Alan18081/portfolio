@@ -1,0 +1,114 @@
+extends layout/main
+
+block title
+	title Мои работы
+
+block content
+	include layout/menu
+	header.header
+		img.header__bg(src="./static/assets/img/bg.jpg")
+		img.header__portfolio(src="./static/assets/img/portfolio_header.svg")
+		ul.social.social_fill_white.social_top
+			each item in ["vk","github","in"]
+				li(class="social__item social__item_" + item)
+					a.social__link
+						svg.social__icon
+							use(xlink:href="./static/assets/sprite/sprite.svg#" + item)
+		ul.burger-menu
+			each item in [1,2,3]
+				li.burger-menu__item
+		.hero.hero_alone
+			img(src="./static/assets/img/logo.png").hero__img
+			.hero__title
+				.hero__name Остапюк Олег
+				.hero__descr Личный сайт веб-разработчика
+		a.arrow
+			svg.arrow__svg
+				use(xlink:href="./static/assets/sprite/sprite.svg#arrow_down")
+		svg.header__triangle(preserveaspectratio="none" viewBox="0 0 1000 109")
+			polygon.header__polygon.header__polygon_fill_white(points="0,0 0,109 500.8,109")
+			polygon.header__polygon.header__polygon_fill_white(points="1000,0 1000,109 500,109")
+	section.works
+		h1.main-title.main-title_works Мои работы
+			.main-title__bg.main-title__bg_works
+				svg.main-title__svg
+					use(xlink:href="./static/assets/sprite/sprite.svg#works_header")
+		.slider
+			.slider-info
+				ul.slider-info__list
+					each item,i in slider_info
+						li.slider-info__item(class=(i == 0) ? "slider-info__item_active" : "")
+							h2.subtitle.subtitle_works= item.title
+							.slider__technologies= item.tech
+							a(href="#").btn
+								svg.btn__icon
+									use(xlink:href="./static/assets/sprite/sprite.svg#link")
+								.btn__text Посмотреть сайт
+
+			.slider__display
+				img.slider__img(src=`${slider_info[0].image}`)
+			.slider__controls
+				.slider__next
+					svg.slider__arrow
+						use(xlink:href="./static/assets/sprite/sprite.svg#portf_arrow_down")
+					ul.slider__controls-list
+						each item,i in slider_info
+							li.slider__controls-item(class=(i == 1) ? "slider__controls-item_active" : "")
+								img.slider__controls-img(src=`${item.image}`)
+				.slider__prev
+					svg.slider__arrow
+						use(xlink:href="./static/assets/sprite/sprite.svg#portf_arrow_up")
+					ul.slider__controls-list
+						each item,i in slider_info
+							li.slider__controls-item.slider__controls-item_prev(class=(i == slider_info.length - 1) ? "slider__controls-item_active" : "")
+								img.slider__controls-img(src=`${item.image}`)
+	section.comments
+		h1.main-title.main-title_comments
+			| Что обо мне говорят
+			.main-title__bg.main-title__bg_comments
+				svg.main-title__svg
+					use(xlink:href="./static/assets/sprite/sprite.svg#about_header")
+		ul.comments__list
+			each comment in comments
+				li.comments__item
+					svg.comments__quote
+						use(xlink:href="./static/assets/sprite/sprite.svg#quote-left")
+					.comments__text= comment.text
+					.comments__author
+						img.comments__img(src="./static/assets/img/comm-" + comment.img + ".png")
+						.comments__caption
+							.comments__name= comment.name
+							.comments__status= comment.status
+		form.message-form(novalidate)
+			.message-form__bg
+			.message-form__content
+				h2.subtitle Связаться со мной
+				input.input.input_message-form(type="text" placeholder="Имя" name="name")
+				input.input.input_message-form(type="email" placeholder="Email" name="email")
+				textarea.field(placeholder="Ваше сообщение" name="message")
+			.message-form__btns
+				button.btn.btn_message-form(type="submit") Отправить
+				button.btn.btn_message-form(type="reset") Очистить
+		a.arrow.arrow_up
+			svg.arrow__svg
+				use(xlink:href="./static/assets/sprite/sprite.svg#portf_arrow_up")
+		footer.footer.footer_position_static
+			.footer__top
+				nav.menu.menu_footer
+					ul.menu__list
+						each item in menu
+							li.menu__item
+								a(href="" + item.link + ".html").menu__link= item.text
+				ul.social.social_fill_gray.social_footer
+					each item in ["vk","github","in"]
+						li(class="social__item social__item_" + item)
+							a.social__link
+								svg.social__icon
+									use(xlink:href="./static/assets/sprite/sprite.svg#" + item)
+			.footer__bottom
+				.footer__info
+					| Я веб-разработчик из Днепра и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+				.copyrights.copyrights_static &copy; Остапюк Алексей | создано с любовью в LoftSchool | 2016
+			.saved-window
+				.saved-window__title Сообщение отправлено
+				a.saved-window__btn(href="#") Закрыть

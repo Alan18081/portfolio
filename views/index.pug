@@ -1,0 +1,73 @@
+extends layout/main
+
+block title
+	title Welcome
+
+block content
+	header.header.header_welcome
+		a(href="#").author-btn.author-btn_header
+			| Авторизоваться
+		.panel.panel_hero
+			.panel__wrapper
+				.panel__content
+					.hero
+						img(src="./static/assets/img/logo.png").hero__img
+						.hero__title
+							.hero__name Остапюк Алексей
+							.hero__descr Личный сайт веб-разработчика
+					ul.social.social_fill_blue
+						each item in ["vk","github","in"]
+							li(class="social__item social__item_" + item)
+								a.social__link(href=`http://${item}.com` target="_blank")
+									svg.social__icon
+										use(xlink:href="./static/assets/sprite/sprite.svg#" + item)
+				nav.menu.menu_hero
+					ul.menu__list
+						each item,i in menu
+							if i < menu.length - 1
+								li.menu__item
+									a(href="/" + item.link).menu__link= item.text
+
+		form.panel.panel_sign
+			.panel__wrapper
+				.panel__content
+					.subtitle.subtitle_color_white Авторизация
+					.sign-form
+						label(class="sign-form__item sign-form__item_login")
+							.sign-form__icon
+								svg.sign-form__svg
+									use(xlink:href="./static/assets/sprite/sprite.svg#login")
+							input(type="text" name="login" placeholder="Логин" ).input.input_sign
+						label(class="sign-form__item sign-form__item_password")
+								.sign-form__icon
+									svg.sign-form__svg
+										use(xlink:href="./static/assets/sprite/sprite.svg#password")
+								input(type="password" name="password" placeholder="Пароль" ).input.input_sign
+
+						label.sign-form__item.sign-form__item_checkbox
+							.checkbox
+								input(type="checkbox" class="checkbox__input" name='check')
+								.checkbox__icon
+									svg.checkbox__svg
+										use(xlink:href="./static/assets/sprite/sprite.svg#check")
+								.checkbox__text Я человек
+						label.sign-form__item.sign-form__item_checkbox
+							.radio
+								.radio__title Вы точно не робот?
+								label.radio__item
+									input.radio__input(type="radio" name="robot" value="true")
+									.radio__circle
+										.radio__circle.radio__circle_inner
+									.radio__text Да 
+								label.radio__item
+									input.radio__input(type="radio" name="robot" value="false")
+									.radio__circle
+										.radio__circle.radio__circle_inner
+									.radio__text Не уверен
+			nav.menu.menu_sign
+				ul.menu__list
+					li.menu__item
+						a(href="/").menu__link.menu__link_home На главную
+					li.menu__item
+						button(type="submit").menu__link#sign-submit Войти
+		.copyrights &copy; Остапюк Алексей | создано с любовью в LoftSchool | 2016

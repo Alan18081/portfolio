@@ -1,0 +1,11 @@
+mixin nav(className,index,items)
+	ul(class=`${className}`)
+		each val,key in items
+			li(class=`${className}__item` + ((key == index) ? `${className}__item_active` : ""))
+				a(href="#" class=`${className}__link`)= val
+
+
+svg.message-form-blur
+	defs
+		filter#message-form-blur
+			feGaussianBlur(stdDeviation="8")

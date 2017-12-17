@@ -1,0 +1,28 @@
+{
+  "http" : {
+    "port" : 3000,
+    "host" : "localhost",
+    "public" : "public"
+  },
+  "db" : {
+    "port" : 27017,
+    "host" : "localhost",
+    "name" : "portfolio",
+    "username" : "",
+    "password" : ""
+  },
+  "mail" : {
+    "subject" : "Сообщение с сайта-портфолио",
+    "smtp" : {
+      "service" : "gmail",
+      "secure" : false,
+      "auth" : {
+        "user" : "gogunov00@gmail.com",
+        "pass" : "morgan11neosk"
+      },
+      "tls": {
+        "rejectUnauthorized" : false
+      }
+    }
+  }
+}

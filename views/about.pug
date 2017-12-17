@@ -1,0 +1,272 @@
+extends layout/main
+
+block title
+	title Обо мне
+
+block content
+	include layout/menu
+	header.header
+		img.header__bg(src="./static/assets/img/bg.jpg")
+		img.header__portfolio(src="./static/assets/icons/portfolio_header.svg")
+		ul.social.social_fill_white.social_top
+			each item in ["vk","github","in"]
+				li(class="social__item social__item_" + item)
+					a.social__link
+						svg.social__icon
+							use(xlink:href="./static/assets/sprite/sprite.svg#" + item)
+		ul.burger-menu
+			each item in [1,2,3]
+				li.burger-menu__item
+		.hero.hero_alone
+			img(src="./static/assets/img/logo.png").hero__img
+			.hero__title
+				.hero__name Остапюк Алексей
+				.hero__descr Личный сайт веб-разработчика
+		a.arrow
+			svg.arrow__svg
+				use(xlink:href="./static/assets/sprite/sprite.svg#arrow_down")
+		svg.header__triangle(preserveaspectratio="none" viewBox="0 0 1000 109")
+			polygon.header__polygon.header__polygon_fill_light-gray(points="0,0 0,109 500.8,109")
+			polygon.header__polygon.header__polygon_fill_gray(points="1000,0 1000,109 500,109")
+	section.about
+		.about__left
+			.hero-info
+				h1.main-title.main-title_about
+					| Обо мне
+					.main-title__bg
+						svg.main-title__svg
+							use(xlink:href="./static/assets/sprite/sprite.svg#about_header")
+				img.hero-info__img(src="./static/assets/img/info-img.jpg")
+				h2.subtitle Кто я
+				.hero-info__text
+					p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+					p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+		.about__right
+			.skills
+				.skills__head
+					h2.subtitle.subtitle_skills Чем я могу быть полезен
+					.skills__text
+						p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+				ul.skills__list
+					each skill in skills
+						li.skills-block
+							h3.skills-block__title= skill.section
+							ul.skills-block__list
+								each item in skill.items
+									li.skills-block__item(data-size=`${item.value}`)
+										svg.skills-block__svg(viewBox="0 0 111 111")
+											circle(r="45" cx="50%" cy="50%" fill="none" class="skills-block__circle" style=`opacity: ${item.value / 100};`)
+											circle(r="45" cx="50%" cy="50%" fill="none" transform="rotate(-90 55.5 55.5)" class="skills-block__circle skills-block__circle_animated" style=`opacity: ${item.value / 100};`)
+										.skills-block__caption= item.name
+	section.contacts
+		.contacts__map#map
+		.contacts-info
+			h2.subtitle Контакты
+			ul.contacts-info__list
+				each item in contacts
+					li.contacts-info__item
+						svg(class="contacts-info__icon contacts-info__icon_" + item.icon)
+							use(xlink:href="./static/assets/sprite/sprite.svg#" + item.icon)
+						.contacts-info__caption= item.text
+		footer.footer
+			.footer__top
+				nav.menu.menu_footer
+					ul.menu__list
+						each item in menu
+							li.menu__item
+								a(href="" + item.link + ".html").menu__link= item.text
+				ul.social.social_fill_gray.social_footer
+					each item in ["vk","github","in"]
+						li(class="social__item social__item_" + item)
+							a.social__link
+								svg.social__icon
+									use(xlink:href="./static/assets/sprite/sprite.svg#" + item)
+			.footer__bottom
+				.footer__info
+					| Я веб-разработчик из Днепра и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+				.copyrights.copyrights_static &copy; Остапюк Алексей | создано с любовью в LoftSchool | 2017
+			script
+				| function initMap() {
+				|   var uluru = {lat: 48.507430, lng: 35.093071};
+				|   var map = new google.maps.Map(document.getElementById('map'), {
+				|     zoom: 15,
+				|     center: uluru,
+				|     disableDefaultUI: true,
+				|     scrollwheel: false,
+				|     styles: [
+				|       {
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#f5f5f5"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "elementType": "labels.icon",
+				|         "stylers": [
+				|           {
+				|             "visibility": "off"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#616161"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "elementType": "labels.text.stroke",
+				|         "stylers": [
+				|           {
+				|             "color": "#f5f5f5"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "administrative.land_parcel",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#bdbdbd"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "poi",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#eeeeee"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "poi",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#757575"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "poi.park",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#e5e5e5"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "poi.park",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#9e9e9e"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "road",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#ffffff"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "road.arterial",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#757575"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "road.highway",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#dadada"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "road.highway",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#616161"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "road.local",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#9e9e9e"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "transit.line",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#e5e5e5"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "transit.station",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#eeeeee"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "water",
+				|         "elementType": "geometry",
+				|         "stylers": [
+				|           {
+				|             "color": "#00bfa5"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "water",
+				|         "elementType": "geometry.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#00bfa5"
+				|           },
+				|           {
+				|             "visibility": "on"
+				|           }
+				|         ]
+				|       },
+				|       {
+				|         "featureType": "water",
+				|         "elementType": "labels.text.fill",
+				|         "stylers": [
+				|           {
+				|             "color": "#9e9e9e"
+				|           }
+				|         ]
+				|       }
+				|     ]
+				|   });
+				| }
+			script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcA7WlTUGtFmEc0yx_w7QOk07YxZS9ht4&callback=initMap")
+
+

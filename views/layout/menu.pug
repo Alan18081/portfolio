@@ -1,0 +1,10 @@
+.popup-menu
+	.popup-menu__left
+	.popup-menu__right
+	.popup-menu__close
+		.popup-menu__line
+		.popup-menu__line
+	ul.popup-menu__list
+		each item in menu
+			li.popup-menu__item
+				a.popup-menu__link(href="/" + item.link)= item.text

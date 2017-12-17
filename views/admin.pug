@@ -1,0 +1,57 @@
+extends layout/main
+
+block title
+  title Панель администратора
+
+block content
+  include layout/menu
+  header.admin-header
+    h1.admin-header__title Панель администрирования
+    a(href="/").admin-header__link Вернуться на сайт
+  section.admin
+    ul.admin-menu
+      each item in [{text: "Обо мне", href: "about"},{text: "Блог", href:"blog"},{text: "Мои работы", href: "works"}]
+        if item.href == "about"
+          li(class="admin-menu__item admin-menu__item_active")
+            a(href="#" + item.href).admin-menu__link= item.text
+        else
+          li(class="admin-menu__item")
+            a(href="#" + item.href).admin-menu__link= item.text
+    ul.admin-content
+      li.admin-content__item.admin-content__item_active#a-about
+        h2.subtitle.subtitle_admin Страница &laquo;Обо мне&raquo;
+        ul.admin-tech
+          each stack in stacks
+            li.admin-tech__stack
+              h3.admin-tech__title= stack.section
+              ul.admin-tech__list
+                each item in stack.items
+                  li.admin-tech__elem
+                    .admin-tech__caption= item.name
+                    label.admin-tech__value
+                      input(type="text" maxlength="3" max="100" name=`${item.name}` value=`${item.value}`).input.input_skill
+                      .admin-tech__percent %
+        button.btn.btn_admin#about Сохранить
+      li.admin-content__item#a-blog
+        h2.subtitle.subtitle_admin Страница &laquo;Блог&raquo;
+        form.admin-form#add-article
+          .admin-form__caption Добавить запись
+          input.input.input_admin#article-name(type="text" placeholder="Название")
+          input.input.input_admin#article-date(type="text" placeholder="Дата")
+          textarea.field.field_admin#article-text(placeholder="Содержание")
+          button(type='submit').btn.btn_admin Сохранить
+      li.admin-content__item#a-works
+        h2.subtitle.subtitle_admin Страница &laquo;Мои работы&raquo;
+        form.admin-form#add-work(enctype='multipart/form-data')
+          .admin-form__caption Добавить работу
+          input.input.input_admin#work-name(type="text" placeholder="Название проекта")
+          input.input.input_admin#work-tech(type="text" placeholder="Технологии")
+          label.file#work-img
+            input.file__input(type="file")
+            svg.file__svg
+              use(xlink:href="./static/assets/sprite/sprite.svg#picture")
+            .file__caption Загрузить картинку
+          button(type="submit").btn.btn_admin Сохранить
+    .saved-window
+      .saved-window__title Сообщение отправлено
+      a.saved-window__btn(href="#") Закрыть
