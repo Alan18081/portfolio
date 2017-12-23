@@ -1,0 +1,13 @@
+extends layout/main
+
+block title
+  title Страница не найдена
+
+block content
+  .page-error
+    .page-error__content
+      h1.page-error__status 404
+      h2.page-error__title Страница не найдена
+      svg.page-error__icon
+        use(xlink:href="static/assets/sprite/sprite.svg#sad")
+      a.page-error__btn(href="/") На главную

@@ -12,18 +12,15 @@ router.post('/auth', function(req,res){
   var authLogin = req.body.login;
   var authPassword = crypto.createHash('md5').update(String(req.body.password)).digest('hex');
   var Users = mongoose.model('Users');
-  Users.findOne({ login:  authLogin, password: authPassword}).exec(
-    function(user){
-      if(!user) {
-        res.send('Логин или пароль неверны');
-      }
-      else {
-        req.session.isAdmin = 'true';
-        console.log(req.session.isAdmin);
-        res.send('true');
-      }
-    }
-  );
+  Users.findOne({ "login":  authLogin, "password": authPassword},function(err,user){
+    console.log(authLogin,authPassword);
+   if(!user) {
+     res.send('Неверный логин или пароль');
+   }
+   else {
+     res.send('true');
+   }
+  });
 });
 
 module.exports = router;

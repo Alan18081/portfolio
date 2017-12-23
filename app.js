@@ -6,6 +6,7 @@ const session = require("express-session");
 const config = require("./config.json");
 const bodyParser = require('body-parser');
 const MongoStore = require('connect-mongo')(session);
+const favicon = require('serve-favicon');
 
 const app = express();
 
@@ -15,10 +16,10 @@ app.use(session({
   saveUninitialized: false,
   store: new MongoStore({mongooseConnection: mongoose.connection})
 }));
-
 app.use(express.static(path.resolve(`./${config.http.public}`)));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(favicon(path.join(__dirname,'public','static','assets','favicon','favicon.ico')));
 
 // Our schemas
 require('./models/Articles.model');
@@ -36,12 +37,15 @@ app.use("/works", require("./routes/works"));
 app.use("/blog", require("./routes/blog"));
 
 app.use(function (req,res,next) {
-  res.status(404).send("Page not found");
-  next();
+  res.render('404');
+});
+
+app.use(function(err,req,res,next){
+  res.render('500');
 });
 
 mongoose.connect(`mongodb://${config.http.host}/portfolio`, {useMongoClient: true});
 mongoose.Promise = global.Promise;
-app.listen(process.env.PORT || 3000,function(){
+app.listen(config.http.port,function(){
   console.log(`Server is run at ${config.http.host}:${config.http.port}`);
 });

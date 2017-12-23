@@ -6,7 +6,7 @@ const PATH = {
 };
 
 const VENDOR_LIBS = ['jquery','svg4everybody','jquery.scrollbar',
-  'jquery.nicescroll','validetta'];
+  'jquery.nicescroll'];
 
 module.exports = {
     entry : {
@@ -33,6 +33,7 @@ module.exports = {
         path : PATH.dist,
         filename : "js/[name].js"
     },
+    devtool: 'source-map',
     plugins : [
         new ExtractTextPlugin('vendor.css'),
         new G.webpack.optimize.UglifyJsPlugin(),
